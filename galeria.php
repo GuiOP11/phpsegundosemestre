@@ -6,14 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>Galeria</h3>
+    <h3>Meus Clientes</h3>
     <?php
     require_once 'src/ClienteDAO.php';
     $clientes = ClienteDAO::listar();
 
-    foreach ($clientes as $clientes){
+    foreach ($clientes as $cliente){
 
     
+    ?>
+    <p><?=$cliente['nome']?></p>
+    <?php
+    }
     ?>
 </body>
 </html>
