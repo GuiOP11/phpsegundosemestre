@@ -10,6 +10,10 @@
     <?php
     require_once 'src/ClienteDAO.php';
     $clientes = ClienteDAO::listar();
+
+    foreach ($clientes as $clientes){
+
+    
     ?>
 </body>
 </html>
