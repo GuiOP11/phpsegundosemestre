@@ -16,6 +16,7 @@
     
     ?>
     <p><?=$cliente['nome']?></p>
+    <img src="uploads/<?=$cliente['imagem']?>" alt="<?=$cliente['nome']?>" width="200">
     <?php
     }
     ?>
